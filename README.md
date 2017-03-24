@@ -1,0 +1,2 @@
+# pritice
+About new rookie
