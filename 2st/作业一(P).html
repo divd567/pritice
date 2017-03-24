@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<tilte></tilte>
+		<style>
+			h1,h2,p{
+				margin:0;
+			}
+			ul{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			a{
+				text-decoration: none;
+			}
+			#box{
+				width:358px;
+				border:1px solid #d3c0b1;
+			}
+			.title{
+				height:35px;
+				background: url(img/con4.gif) no-repeat 8px 13px;
+			}
+			.title h2{
+				font:bold 15px/35px '黑体';
+				text-indent: 26px;
+				display:inline-block;
+				margin-right: 225px;
+			}
+			.title a{
+				font:11px '宋体';
+				color: #626262;
+			}
+			h1{
+				height: 40px;
+				font: bold 18px/40px '黑体';
+				padding-left: 17px;
+			}
+			h1 a{
+				color:#cb3332;
+			}
+			.first{
+				margin-bottom: 0;
+			}
+			.img{
+				padding: 6px 13px 15px 13px; 
+				font-size:0;
+			}
+			.imgleft{
+				width:124px;
+				height:185px;
+				padding:4px 4px 5px 4px;    /*图片在上面,background的红色是底色层,所需要做一个padding值来形成一个视觉框*/
+				border:1px solid #e4e2cd;
+				background:#a80e04;
+				display:inline-block;
+				margin-right:14px				
+			}
+			.imgleft p{
+				font:11px/16px '宋体';
+				color:#fffef4;
+				text-align: center; 
+				padding-top:3px;
+			}
+			.imgright{
+				width:184px;
+				display:inline-block;
+			}
+			.imgright p{
+				font: 11px/18px '宋体';
+				color:#949494;
+				text-indent: 2em;
+			}
+			.imgright p a{
+				color:#d32f36;
+			}
+			.imgright ul{
+				padding-top:5px;
+			}
+			.imgright li{
+				height:24px;
+				font:13px/24px '宋体';
+				background:url(img/con5.gif) no-repeat 3px 10px;
+				padding-left:16px;
+			}
+			.imgright li a{
+				color:#000000;
+			}
+			.list{
+				border-top:1px solid #d5bfb2;
+				padding:6px 0 0 0;
+				font-size:0;
+			}
+			.list ul{
+				padding:13px 0 17px 0;
+			}
+			.list li{
+				width:179px;
+				height:24px;
+				font:13px/24px '宋体';
+				background:url(img/con5.gif) no-repeat 10px 10px;
+				text-indent: 22px;
+				display:inline-block
+			}
+			.list li a{
+				color:#000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="first">   <!--先写一个大的DIV-->
+				<div class="title">  <!--里面再套一个顶部DIV-->
+					<h2>精彩专题</h2><a href="#">更多>></a>
+				</div>
+				<h1><a href="#">冬季六节气：冬雪雪冬小大寒</a></h1>
+				<div class="img">
+					<div class="imgleft">
+						<a href="#"><img src="img/con3.gif" alt="winnter" /></a>
+						<p>冬季六节气之<br />中医宝典</p>  <!--这样就能实现换行功能-->
+					</div>
+					<div class="imgright">
+					<p>冬季是从立冬开始，经过小雪、大雪、冬至、小寒、大寒，直到立春的前一天为止。中医认为冬季是藏匿...<a href="#">[详情]</a></p>
+					<ul>
+					<li><a href="#">中医谈武林中的那点事</a></li>
+					<li><a href="#">男人为什么越来越弱</a></li>
+					<li><a href="#">天价中药：爱你不容易</a></li>
+					<li><a href="#">补中益气之要穴足三里</a></li>
+					<li><a href="#">那些不为人知的"群体"</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="list">
+				<div class="title">
+					<h2>健康自检</h2><a href="#">更多>></a>
+				</div>
+					<ul>
+					<li><a href="#">自测：你是气虚体质吗</a></li>
+					<li><a href="#">中医：手脚冰凉怎么回事</a></li>
+					<li><a href="#">起床状态反应你的健康</a></li>
+					<li><a href="#">从宝宝睡眠看疾病征兆</a></li>
+					<li><a href="#">头发颜色反应健康问题</a></li>
+					<li><a href="#">中医教你辨别感冒类型</a></li>
+					<li><a href="#">从指甲判断大病征兆</a></li>
+					<li><a href="#">[中医讲解]肾与膀胱病</a></li>
+					</ul>				
+			</div>
+			<div class="list">
+				<div class="title">
+					<h2>就医知识</h2><a href="#">更多>></a>
+					</div>
+					<ul>
+					<li><a href="#">看病切莫隐瞒医生的10</a></li>
+					<li><a href="#">糖尿病的钱到底花在哪</a></li>
+					<li><a href="#">男人30后必须做的8项体检</a></li>
+					<li><a href="#">感冒也作假 六种类似感</a></li>
+					<li><a href="#">中医：热敷膝盖好处多</a></li>
+					<li><a href="#">中医：思虑过度易伤脾</a></li>
+					<li><a href="#">中医：养正气 抗疾病</a></li>
+					<li><a href="#">定期口腔检查可预防隅</a></li>
+					</ul>				
+			</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
