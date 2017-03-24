@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"/>
+	<head>
+		<title></title>
+		<style>
+			h3,p{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			body{
+				margin: 0;
+			}
+			h3{
+				font: 24px "微软雅黑";
+			}
+			.wrap{
+				background: #f9f9f9;
+				position: relative;
+			}
+			.nav{
+				height: 41px;
+				width: 2000px;
+				background-color: #959595;
+				font-size: 0;
+				opacity: 0.5;
+				filter: alpha(opacity:0.5);  /*解决IE6下透明问题*/
+				text-align: center;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 3;				
+			}
+			.nav li{
+				display: inline;
+			}
+			/*
+			 * 第一个问题，如何让li在一行中显示？(float:left也可以，但没必要)
+			 * display:inline
+			 */
+			.nav a{
+				font:16px/41px  "微软雅黑",'Helvetica', 'Arial';
+				color:#fff;
+				margin: 0 10px;
+			}
+			#pro{
+				height: 614px;
+				background: #f9f9f9;
+				padding-top: 190px;
+				padding-bottom: 190px;
+			}
+			.proimg{
+				width: 1200px;
+				height: 675px;
+				margin: 0 auto;
+				position: relative;
+			}
+			/*图片居中，设一个DIV包裹然后再margin:0 auto*/
+			img{
+				display:block;
+				margin: 0 auto;
+				zoom: 0.9;
+			}
+			.protxt{
+				position: absolute;	
+				right: 200px;
+				bottom: 250px;
+			}
+			.headline{
+				font: 19px/39px "幼圆";
+			}
+			.protxt p{
+				font: 15px/20px "微软雅黑";
+				color:  #4c9bd4;
+				text-indent: 30px;
+			}
+			.br{
+				padding-right: 12px;
+			}
+			.bl{
+				padding-left: 12px;
+				color: #000;
+				border-left: 1px solid #000;
+			}
+			.price{
+				padding-top: 10px;
+				text-indent: 18px;
+			}
+			.price a{
+				font: 13px/33px '幼圆';
+				color: #4c9bd4;
+				padding-left: 15px;
+			}
+			#plus{
+				padding: 100px 0;
+			}
+			.plustxt{
+				position: absolute;	
+				left: 200px;
+				bottom: 250px;
+			}
+			.plustxt p{
+				font: 15px/20px "微软雅黑";
+				color:  #4c9bd4;
+				text-indent: 30px;
+			}
+			#Chopsticks{
+				background: #f9f9f9;
+				padding: 90px 0 90px 0;
+				position: relative;
+			}
+			.chtxt{
+				position: absolute;	
+				right: 210px;
+				bottom: 220px;
+			}
+			.chtxt p{
+				font: 15px/20px "微软雅黑";
+				color:  #4c9bd4;
+				text-indent: 30px;
+			}
+			#design{
+				background: #fff;
+				padding: 90px 0 90px 0;
+				position: relative;
+			}
+			.detxt{
+				position: absolute;	
+				left: 180px;
+				bottom: 220px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="nav">
+				<ul>
+					<li><a href="#pro">Pro</a></li>
+					<li><a href="#plus">Plus</a></li>
+					<li><a href="#Chopsticks">Chopsticks</a></li>
+					<li><a href="#design">Design</a></li>
+					<li><a href="#">技术支持</a></li>
+				</ul>
+			</div>
+			<div id="pro">
+				<div class="proimg">
+				<img src="./img/niutou_01.jpg" alt="Little Face pro" />
+				<div class="protxt">
+					<h3>LittleFace Pro</h3>
+					<span class="headline">入口柔 一线喉 非同一般的感受</span>
+					<p><span class="br">5.00 RMB</span><span class="bl">100g</span></p>
+					<div class="price">
+						<a href="#">进一步了解></a><a href="#">购买></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div id="plus">
+				<div class="proimg">
+				<img src="./img/niutou_02.jpg" alt="Little Face plus" />
+				<div class="plustxt">
+					<h3>LittleFace Plus</h3>
+					<span class="headline">更敞开的设计 更酣畅的体验</span>
+					<p><span class="br">7.00 RMB</span><span class="bl">150g</span></p>
+					<div class="price">
+						<a href="#">进一步了解></a><a href="#">购买></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div id="Chopsticks">
+				<div class="proimg">
+				<img src="./img/niutou_03.jpg" alt="Chopsticks" />
+				<div class="chtxt">
+					<h3>LittleFace Chopsticks</h3>
+					<span class="headline">金丝楠木筷 300道工艺精制而成</span>
+					<p><span class="br">50.000 RMB</span><span class="bl">1双*8</span></p>
+					<div class="price">
+						<a href="#">进一步了解></a><a href="#">购买></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div id="design">
+				<div class="proimg">
+				<img src="./img/niutou_04.jpg" alt="Design" />
+				<div class="detxt">
+					<h3>LittleFace Design</h3>
+					<span class="headline">工业设计 颠覆传统</span>
+					<div class="price">
+						<a href="#">进一步了解></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+	
