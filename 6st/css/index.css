@@ -1,0 +1,25 @@
+.box{
+	width: 1000px;
+	height: 200px;
+	border: 5px solid #008000;
+	margin: 200px auto;
+	font-size: 0;
+	overflow: hidden;
+}
+.dong{
+	width: 2000px;
+}
+.box .dong{
+	animation: 5s move linear infinite normal;
+}
+.box .dong:hover{
+				animation-play-state: paused;
+			}
+@keyframes move{
+				0%{
+					transform: translateX(0px);
+				}
+				100%{
+					transform: translateX(-1000px);
+				}
+}

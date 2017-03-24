@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+}
+#wrap{
+	width: 300px;
+	height: 300px;
+	margin: 200px auto;
+	transform-style: preserve-3d;
+	position: relative;
+	/*perspective:800px ;		*/		/*景深-眼睛到屏幕的距离*/
+	transform: perspective(800px)  rotateX(0deg)  rotateY(-70deg) rotateZ(0);
+	animation: 10s move linear infinite;
+}
+#wrap div{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font: 50px/300px "微软雅黑";
+	text-align: center;
+	color: #fff;
+}
+/*正面*/
+#wrap div:nth-of-type(1){
+	background: green;
+	transform: translateZ(150px);    /* 往前面走*/
+}
+/*背面*/
+#wrap div:nth-of-type(2){
+	background: goldenrod;
+	transform: translateZ(-150px);
+}
+/*上面*/
+#wrap div:nth-of-type(3){
+	background: gray;
+	
+	transform-origin: top;
+	transform: translateZ(150px) rotateX(-90deg);	
+}
+/*底面*/
+#wrap div:nth-of-type(4){
+	background: pink;
+	transform-origin: bottom;
+	transform: translateZ(150px) rotateX(90deg);	
+}
+/*左面*/
+#wrap div:nth-of-type(5){
+	background: red;
+	transform-origin: left;
+	transform: translateZ(150px) rotateY(90deg);	
+}
+/*右面*/
+#wrap div:nth-of-type(6){
+	background: blue;
+	transform-origin: right;
+	transform: translateZ(150px) rotateY(-90deg);	
+}
+
+/*怎么转起来呢？ 就是匀速的增加XYZ的度数*/
+
+@keyframes move{
+	100%{
+		transform: perspective(800px)  rotateX(360deg)  rotateY(360deg) rotateZ(360deg);
+	}
+}

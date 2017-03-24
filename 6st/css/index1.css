@@ -1,0 +1,54 @@
+#wrap{
+	width: 200px;
+	height: 200px;
+	border: 5px solid #008000;
+	margin: 200px auto;
+	overflow: hidden;
+	transition: 5s width;
+	
+}
+#wrap .box{
+	width: 1000px;
+	font-size: 0;
+	animation: 6s move linear infinite normal;
+}
+
+#wrap .box:hover{
+	animation-play-state: paused;
+}
+
+@keyframes move{
+	0%{
+		transform: translateX(0px)
+	}
+	10%{
+		transform: translateX(0px);
+	}
+	20%{
+		transform: translateX(-200px)
+	}
+	30%{
+		transform: translateX(-200px);
+	}
+	40%{
+		transform: translateX(-400px)
+	}
+	50%{
+		transform: translateX(-400px);
+	}
+	60%{
+		transform: translateX(-600px)
+	}
+	70%{
+		transform: translateX(-600px);
+	}
+	80%{
+		transform: translateX(-800px)
+	}
+	90%{
+		transform: translate(-800px);
+	}
+	100%{
+		transform: translateX(-1000px)
+	}
+}
